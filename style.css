@@ -1,0 +1,80 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: #333;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+header {
+  padding: 1em;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.header-content img {
+  max-width: 150px;
+  height: auto;
+  border-radius: 50%;
+  margin-top: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.header-content img:hover {
+  transform: scale(1.1) translate(0, -5px);
+}
+
+h1, h2, p, a {
+  color: #333;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+h1:hover, h2:hover, p:hover, a:hover {
+  color: #555;
+  transform: translate(0, -5px);
+}
+
+.section {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background: linear-gradient(to right, #fff, #f5f5f5);
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.section:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.02) translate(0, -5px);
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #2980b9;
+  transform: translate(0, -5px);
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
